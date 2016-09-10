@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +29,23 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        /*
+        code to add views to a view group directly in the class
+
+        LinearLayout layout = (LinearLayout) findViewById(R.id.content_layout);
+
+        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        for (int i =0; i < 3; i++){
+            Button button = new Button(this);
+            button.setText("Click me");
+            button.setLayoutParams(params);
+            layout.addView(button);
+
+        }*/
     }
 
     @Override
